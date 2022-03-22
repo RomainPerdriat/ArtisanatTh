@@ -1,0 +1,31 @@
+@import 'styles/vars';
+    
+    .appBar{
+        margin-top: 87px;
+        max-height: 15em;
+        flex-wrap: nowrap;
+    }
+    .toolbar{
+        display: flex;
+        justify-content: space-between;
+        margin-left: $gutter;
+        display: flex
+    }
+    // .navlinks {
+      
+    // }
+   .logo {
+      flex-grow: 1;
+      cursor: pointer,
+    }
+    .link {
+      text-decoration: none;
+      color: $color2;
+      font-size: 20px;
+      margin-left: $gutter;
+    //   &:hover: {
+    //     color: yellow;
+        
+    //   },
+    }
+  

@@ -1,0 +1,12 @@
+@import '/styles/vars';
+.header {
+    top:0;
+    position: absolute;
+    width:100%;
+    height: 150px;   
+    background-color:$bg-color;
+    display: flex;
+    justify-content: center;
+
+    
+}

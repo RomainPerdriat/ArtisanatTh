@@ -3,6 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './app.scss';
+import Home from '../Home/Home';
+import HomePage from '../HomePage/HomePage';
+
 
 const App = ({className, ...rest}) => {
    return (
@@ -10,7 +13,9 @@ const App = ({className, ...rest}) => {
       className={classnames('App', className)}
       {...rest}
      >
-      Artisanatth
+      <Home>
+          <HomePage/>
+      </Home>
     </div>
    );
 };
