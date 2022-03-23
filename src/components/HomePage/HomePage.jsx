@@ -3,16 +3,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './homepage.scss';
+import { Box } from '@material-ui/core';
 
 const HomePage = ({className, ...rest}) => {
    return (
-       <div
+       <Box
             className={classnames('homepage', className)}
             {...rest}
          >
            Page daccueil
 
-        </div>
+        </Box>
    );
 };
 
