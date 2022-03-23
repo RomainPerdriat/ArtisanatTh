@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './homepage.scss';
 import { Box } from '@material-ui/core';
+// import bg from '../../assets/exemple.jpg';
 
 const HomePage = ({className, ...rest}) => {
    return (
@@ -11,11 +12,8 @@ const HomePage = ({className, ...rest}) => {
             className={classnames('homepage', className)}
             {...rest}
          >
-           Page daccueil
-           <Box className = "homepage-picture">
-               PICTURE 
-           </Box>
-
+           <Box className = "homepage-picture"/>
+           <Box className = "homepage-card"> Hello</Box>
         </Box>
    );
 };

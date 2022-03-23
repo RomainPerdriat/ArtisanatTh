@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/Footer';
 
 
 
+
 const Home = ({
     className,
     // eslint-disable-next-line react/prop-types
@@ -19,6 +20,7 @@ const Home = ({
          >
             <Header/>
                 {children}
+                
             <Footer/>
         </div>
    );
