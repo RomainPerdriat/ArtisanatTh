@@ -6,9 +6,8 @@ import { TextField } from '@mui/material';
 import './searchinput.scss';
 
 
+
 const SearchInput = () => {
-
-
 
   const handleSubmit = (event) => {
       event.preventDefault()
@@ -16,11 +15,9 @@ const SearchInput = () => {
   };
 
   return (
-    <Box as="form" onSubmit={handleSubmit}>
-      <TextField className= "input"
-        placeholder="Search..."
-      ></TextField>
-    </Box>
+    <form onSubmit={handleSubmit}>
+      <input className= 'input' placeholder ="Rechercher"></input>
+    </form>
   );
 };
 

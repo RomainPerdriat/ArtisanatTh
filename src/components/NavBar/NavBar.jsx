@@ -13,17 +13,18 @@ import SearchInput from '../SearchInput/SearchInput';
 const NavBar = ({className, ...rest}) => {
    return (
        
-        <AppBar className= "appBar">
+        <AppBar sx = {{ bgcolor: '#455a64',
+        boxShadow: 1,
+        p: .5,
+        mt:14,
+        minWidth: 120,}}>
         <Toolbar className = "toolbar">
             {/* <div className="navlinks"> */}
-            <Typography>Accueil</Typography>
-            <Typography>Créations</Typography>
-            <Typography>Réparations</Typography>
-            <Typography>Contact</Typography>
-            <Typography>
-           
-            <SearchInput/>
-        </Typography>
+            <Typography className = "typography">Accueil</Typography>
+            <Typography className = "typography">Créations</Typography>
+            <Typography className = "typography">Réparations</Typography>
+            <Typography className = "typography">Contact</Typography>
+            <SearchInput />
             {/* <Link to="/" className="link">
                 Home
             </Link>

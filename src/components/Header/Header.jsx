@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
@@ -13,7 +14,7 @@ const Header = ({className, ...rest}) => {
             {...rest}
          >
         <img className = "header-logo" src={logo} alt="Logo" />;
-        <NavBar/>
+         <NavBar/> 
         </Box>
    );
 };
