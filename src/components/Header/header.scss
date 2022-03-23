@@ -7,6 +7,13 @@
     background-color:$bg-color;
     display: flex;
     justify-content: center;
+    &-logo{
+        background-color: aquamarine;
+        max-width: 5em;
+        max-height:4em;
+        margin:.8em;
+        transform:  rotate(45deg);
+    }
 
     
 }

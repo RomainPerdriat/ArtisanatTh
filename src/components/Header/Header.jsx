@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import './header.scss';
 import Box from '@mui/material/Box';
 import NavBar from '../NavBar/NavBar';
+import logo from '../../assets/Logo_cuir.svg.png'
 
 const Header = ({className, ...rest}) => {
    return (
@@ -11,6 +12,7 @@ const Header = ({className, ...rest}) => {
             className={classnames('header', className)}
             {...rest}
          >
+        <img className = "header-logo" src={logo} alt="Logo" />;
         <NavBar/>
         </Box>
    );
