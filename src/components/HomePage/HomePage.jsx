@@ -12,6 +12,9 @@ const HomePage = ({className, ...rest}) => {
             {...rest}
          >
            Page daccueil
+           <Box className = "homepage-picture">
+               PICTURE 
+           </Box>
 
         </Box>
    );

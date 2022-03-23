@@ -3,5 +3,9 @@
 .homepage {
     background-color: $color2;
     margin-top:11.5rem;
-    height: 71vh;
+    height: 120vh;
+    &-picture{
+        background-color: bisque;
+        height: 20rem;
+    }
 }

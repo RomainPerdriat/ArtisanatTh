@@ -14,6 +14,7 @@ const NavBar = ({className, ...rest}) => {
    return (
        
         <AppBar sx = {{ bgcolor: '#455a64',
+        position: 'absolute',
         boxShadow: 1,
         p: .5,
         mt:14,
