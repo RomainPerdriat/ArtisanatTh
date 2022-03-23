@@ -18,6 +18,7 @@ const NavBar = ({className, ...rest}) => {
         boxShadow: 1,
         p: .5,
         mt:14,
+    
         minWidth: 120,}}>
         <Toolbar className = "toolbar">
             {/* <div className="navlinks"> */}
