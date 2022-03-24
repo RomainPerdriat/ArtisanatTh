@@ -1,3 +1,20 @@
+@import 'styles/vars'; 
 .contact{
-    margin-top:25rem;
+    margin-top:12rem;
+    height: 100vh;
+    background-color: $bg-color;
+    &-text{
+        background-color:rgb(131, 22, 76);
+        max-width: 45%;
+        height:100vh;
+        margin: auto;
+    }
+    &-media{
+        box-shadow: 3px;
+        height: 30rem;
+        background-color: rgb(124, 57, 90);
+    }
+}
+.cardcontact{
+    background-color: $color;
 }
