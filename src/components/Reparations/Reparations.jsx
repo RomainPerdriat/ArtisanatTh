@@ -13,11 +13,14 @@ const Reparations = ({className, ...rest}) => {
        <Box
             className={classnames('reparations', className)}
             {...rest}
-         >
+         >  
+            
             <Box className = "reparations-container">
-                <Typography>
-                Il y a toujours une solution pour redonner vie à vos objets!
-                </Typography>
+            <Box className ="title-container">
+                    <Typography className ="reparations-title">
+                    Il y a toujours une solution pour redonner vie à vos objets!
+                    </Typography>
+            </Box>
                 <Box className ="before-after-list">
                 <BeforeAfter/>
                 <BeforeAfter/>

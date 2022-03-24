@@ -20,7 +20,7 @@ const HomePage = ({className, ...rest}) => {
                 <HomePageCard/>
                 <HomePageCard/>
             </Box>
-            <Box className = "homepage-cuire"/>
+            <Box className = "homepage-cuir"/>
             <Box className = "homepage-text">
                 <Typography>                
                 PRESENTATION DES CUIRS
