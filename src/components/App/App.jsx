@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './app.scss';
 import Home from '../Home/Home';
-import HomePage from '../HomePage/HomePage';
+import HomePage from '../HomePageCase/HomePage/HomePage';
 
 
 const App = ({className, ...rest}) => {

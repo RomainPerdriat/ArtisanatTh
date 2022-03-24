@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './homepage.scss';
 import { Box, Typography } from '@material-ui/core';
-import HomePageCard from '../HomePageCard/HomePageCard';
+import HomePageCard from '../../HomePageCase/HomePageCard/HomePageCard'
 
 // import bg from '../../assets/exemple.jpg';
 

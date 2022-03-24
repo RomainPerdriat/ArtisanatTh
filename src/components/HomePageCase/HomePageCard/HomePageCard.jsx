@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import profilplage from '../../assets/profilplage.jpeg';
+import profilplage from '../../../assets/profilplage.jpeg';
 
 
 const HomePageCard = ({className, ...rest}) => {
@@ -34,9 +34,7 @@ const HomePageCard = ({className, ...rest}) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
-            
-        
+    </Card>   
    );
 };
 
