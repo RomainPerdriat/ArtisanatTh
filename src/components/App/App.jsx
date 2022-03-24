@@ -9,6 +9,7 @@ import {Routes, Route} from 'react-router-dom';
 import Creations from '../Creations/Creations';
 import Reparations from '../Reparations/Reparations';
 import Contact from '../Contact/Contact';
+import Error404 from '../Error404/Error404'
 
 
 const App = ({className, ...rest}) => {
@@ -36,6 +37,11 @@ const App = ({className, ...rest}) => {
         <Route path ="/contact" element={
                 <Home>
                     <Contact/>
+                </Home>}
+        />
+        <Route path ="*" element={
+                <Home>
+                    <Error404/>
                 </Home>}
         />
      </Routes>
