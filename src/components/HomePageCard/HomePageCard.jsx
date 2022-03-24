@@ -1,38 +1,42 @@
-import * as React from 'react';
-
-import CardContent from '@mui/material/CardContent';
-import Avatar from '@mui/material/Avatar';
-import Typography from '@mui/material/Typography';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './homepagecard.scss';
-import { Box } from '@material-ui/core';
-
+import { Box, Divider } from '@material-ui/core';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import profilplage from '../../assets/profilplage.jpeg';
 
 
 const HomePageCard = ({className, ...rest}) => {
    return (
-       <Box
-            className={classnames('homepagecard', className)}
-            {...rest}
-            sx={{
-                     height: 350,
-                     maxWidth: 300,                    
-                }}
-         >                           
-                    
-                    
-                    <CardContent className = "homepagecard-cardcontent">
-                        <Avatar alt="MaTête" src='../../assets/profilplage.jpeg' sx={{ width: 100, height: 100 ,mt:1 , mb: 4}} />                           
-                        <Typography variant="body2" color="text.secondary">
-                        This impressive paella is a perfect party dish and a fun meal to cook
-                        together with your guests. Add 1 cup of frozen peas along with the mussels,
-                        if you like.
-                        </Typography>
-                    </CardContent>  
-                 
+       
+    <Card sx={{ maxWidth: 345, minHeight:360, mt:25,p:1, bgcolor :'#e7d7c5'}}>
+      <CardActionArea>
+        <CardMedia 
+          sx={{ boxShadow: 3 }}
+          component="img"
+          height="140"
+          src={profilplage}
+          alt="matete" 
+        />
+        <CardContent >
+          <Typography sx={{p:2,}} gutterBottom variant="h5" component="div">
+            Qui suis-je?
+          </Typography>
+          <Divider/>
+          <Typography sx={{p:2,}} variant="body2" color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
             
-        </Box>
+        
    );
 };
 
