@@ -1,13 +1,14 @@
 @import 'styles/vars'; 
 .contact{
     margin-top:12rem;
-    height: 192vh;
+    height: 200vh;
     background-color: $bg-color;
     &-text{
         background-color:$color2;
         max-width: 45%;
-        height:180vh;
+        height:210vh;
         margin: auto;
+        
     }
     &-media{
         box-shadow: 3px;
