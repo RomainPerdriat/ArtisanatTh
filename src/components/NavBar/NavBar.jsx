@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line no-unused-vars
 import classnames from 'classnames';
 import './navbar.scss';
-import { AppBar,  Toolbar,Typography} from '@mui/material';
-
+import { AppBar,  Toolbar} from '@mui/material';
+import { NavLink } from 'react-router-dom';
 import SearchInput from '../SearchInput/SearchInput';
 
   
@@ -18,31 +18,15 @@ const NavBar = ({className, ...rest}) => {
         boxShadow: 1,
         p: .5,
         mt:14,
-    
         minWidth: 120,}}>
-        <Toolbar className = "toolbar">
-            {/* <div className="navlinks"> */}
-            <Typography className = "typography">Accueil</Typography>
-            <Typography className = "typography">Créations</Typography>
-            <Typography className = "typography">Réparations</Typography>
-            <Typography className = "typography">Contact</Typography>
-            <SearchInput />
-            {/* <Link to="/" className="link">
-                Home
-            </Link>
-            <Link to="/about" className="link">
-                About
-            </Link>
-            <Link to="/contact" className="link">
-                Contact
-            </Link>
-            <Link to="/faq" className="link">
-                FAQ
-            </Link> */}
-            {/* </div> */}
-        </Toolbar>
-        
-    </AppBar>
+            <Toolbar className = "toolbar">
+                <NavLink className = "navlink" to ="/">Accueil</NavLink>
+                <NavLink className = "navlink" to = "/creations">Créations</NavLink>
+                <NavLink className = "navlink" to ="/reparations">Réparations</NavLink>
+                <NavLink className = "navlink" to ="/contact">Contact</NavLink>
+                <SearchInput />
+            </Toolbar>
+         </AppBar>
     
     )
 };

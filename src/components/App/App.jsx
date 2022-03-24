@@ -5,6 +5,10 @@ import classnames from 'classnames';
 import './app.scss';
 import Home from '../Home/Home';
 import HomePage from '../HomePageCase/HomePage/HomePage';
+import {Routes, Route} from 'react-router-dom';
+import Creations from '../Creations/Creations';
+import Reparations from '../Reparations/Reparations';
+import Contact from '../Contact/Contact';
 
 
 const App = ({className, ...rest}) => {
@@ -13,9 +17,29 @@ const App = ({className, ...rest}) => {
       className={classnames('App', className)}
       {...rest}
      >
-      <Home>
-          <HomePage/>
-      </Home>
+     <Routes>
+        <Route path ="/" element={
+                <Home>
+                    <HomePage/>
+                </Home>}
+        />
+        <Route path ="/creations" element={
+                <Home>
+                    <Creations/>
+                </Home>}
+        />
+        <Route path ="/reparations" element={
+                <Home>
+                    <Reparations/>
+                </Home>}
+        />
+        <Route path ="/contact" element={
+                <Home>
+                    <Contact/>
+                </Home>}
+        />
+     </Routes>
+      
     </div>
    );
 };

@@ -10,7 +10,7 @@ const Reparations = ({className, ...rest}) => {
             className={classnames('reparations', className)}
             {...rest}
          >
-            
+            REPARATIONS PAGE
         </Box>
    );
 };

@@ -10,7 +10,7 @@ const Contact = ({className, ...rest}) => {
             className={classnames('contact', className)}
             {...rest}
          >
-            
+            CONTACT PAGE
         </Box>
    );
 };
