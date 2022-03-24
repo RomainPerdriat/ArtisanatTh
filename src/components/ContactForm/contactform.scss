@@ -3,13 +3,16 @@
 .form {
     margin: auto;
     display: flex;
-    width:20em;
+    width:48em;
     height:30em;
     padding:2em;
     flex-direction: column;
     justify-content: space-between;
-    background-color: $bg-color2;  
+    background-color: #706e70;;  
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
         &-input{
             background-color:$color2;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
         }
+        
 }

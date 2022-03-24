@@ -5,7 +5,8 @@ import './contactform.scss';
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import profilplage from '../../assets/profilplage.jpeg'
+import profilplage from '../../assets/profilplage.jpeg';
+import { Typography } from '@material-ui/core';
 
 
 const ContactForm = ({className, ...rest}) => {
@@ -16,9 +17,9 @@ const ContactForm = ({className, ...rest}) => {
                 component="form"
                 className= "form"
                 >
-                        <h2 className="form-title">
-                            Me Contacter
-                        </h2>  
+                    <Typography  variant="h5" >
+                      Me joindre par mail
+                    </Typography> 
                     <TextField
                         label="Email"
                         className='form-input'
