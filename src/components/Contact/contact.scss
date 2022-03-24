@@ -1,7 +1,7 @@
 @import 'styles/vars'; 
 .contact{
     margin-top:12rem;
-    height: 180vh;
+    height: 192vh;
     background-color: $bg-color;
     &-text{
         background-color:$color2;
@@ -17,4 +17,15 @@
 .cardcontact{
     background-color: $color2;
     padding:1em
+}
+
+iframe {
+    height: 22em;
+    width:45rem;
+    margin-top:1rem;
+    border-style: hidden;
+    border-radius: 50px;
+    border:solid $bg-color;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+   
 }
