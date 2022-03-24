@@ -9,6 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import Card from '@mui/material/Card';
+import ContactForm from '../ContactForm/ContactForm'
 
 const Contact = ({className, ...rest}) => {
    return (
@@ -17,8 +18,7 @@ const Contact = ({className, ...rest}) => {
             {...rest}
          >
             <Box className ="contact-text">
-
-                <Card >
+                 <Card >
                   <CardMedia className ="contact-media"
                     component="img"
                     src={profilplage}
@@ -32,17 +32,10 @@ const Contact = ({className, ...rest}) => {
                       Lizards are a widespread group of squamate reptiles, with over 6,000
                       species, ranging across all continents except Antarctica
                     </Typography> 
-              </Card>
-            
-            
-            {/* <Divider/>
-            <Typography>Me contacter</Typography>
-            <Divider/>
-            <Typography>Où me trouver?</Typography> */}
-                
+              </Card>        
+              <ContactForm sx= {{mt:2 ,shadowBox:3}}/>      
+                    
             </Box>
-           
-            
         </Box>
    );
 };

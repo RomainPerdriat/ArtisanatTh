@@ -1,0 +1,15 @@
+@import 'styles/vars';
+
+.form {
+    margin: auto;
+    display: flex;
+    width:20em;
+    height:30em;
+    padding:2em;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $bg-color2;  
+        &-input{
+            background-color:$color2;
+        }
+}

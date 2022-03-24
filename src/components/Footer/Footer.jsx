@@ -14,7 +14,6 @@ const Footer = ({className, ...rest}) => {
     className={classnames('footer', className)}
     {...rest}
  >
- {/* <Box className='footer-container'> */}
    <Box className='footer-left'>
      <img className="footer-logo" src={logo} alt="logo artisan" />
      <p className="footer-artName">Artisanatth© - 2022 </p>
@@ -26,7 +25,6 @@ const Footer = ({className, ...rest}) => {
      <Link to="#" target="_blank" rel="noreferrer"><img className="footer-facebook-logo"src={facebookLogo} alt="logo facebook" /></Link>
      <Link to="#" target="_blank" rel="noreferrer"><img className="footer-facebook-logo"src={instaLogo} alt="logo instagram" /></Link>
      </Box>
-     {/* </Box> */}
 </footer>
    );
 };
