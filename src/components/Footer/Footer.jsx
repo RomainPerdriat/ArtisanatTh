@@ -23,8 +23,8 @@ const Footer = ({className, ...rest}) => {
         <Link className="footer-texte" to="/mentions légales">Mentions légales</Link>
         <Link className="footer-texte" to="politique de confidentialité">Politique de confidentialité</Link>
 
-     <Link to="https://fr-fr.facebook.com/pages/category/Community/Ludautisme-344242315626617/" target="_blank" rel="noreferrer"><img className="footer-facebook-logo"src={facebookLogo} alt="logo facebook" /></Link>
-     <Link to="https://fr-fr.facebook.com/pages/category/Community/Ludautisme-344242315626617/" target="_blank" rel="noreferrer"><img className="footer-facebook-logo"src={instaLogo} alt="logo instagram" /></Link>
+     <Link to="#" target="_blank" rel="noreferrer"><img className="footer-facebook-logo"src={facebookLogo} alt="logo facebook" /></Link>
+     <Link to="#" target="_blank" rel="noreferrer"><img className="footer-facebook-logo"src={instaLogo} alt="logo instagram" /></Link>
      </Box>
      {/* </Box> */}
 </footer>
