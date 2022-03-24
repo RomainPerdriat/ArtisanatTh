@@ -14,14 +14,21 @@ import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
+import engagements from '../../../assets/engagements.jpg';
+import mesures from '../../../assets/metre-main-mesure.jpg';
 
-const HomePageCard = ({className, ...rest}) => {
+
+const HomePageCard = ({
+  className,
+  ...data
+  }) => {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
+  console.log(`Ici`, data.src, engagements, mesures)
    return (
+     
     <Card sx={{ maxWidth: 345, minHeight:360, mt:25,p:1, bgcolor :'#e7d7c5'}}>
     <Button onClick={handleOpen}>
               <CardActionArea>
@@ -29,17 +36,16 @@ const HomePageCard = ({className, ...rest}) => {
                     sx={{ boxShadow: 3 }}
                     component="img"
                     height="140"
-                    src={profilplage}
-                    alt="matete" 
+                    src={data.src}
+                    alt={data.alt} 
                   />
                   <CardContent >
                     <Typography sx={{p:2,}} gutterBottom variant="h5" component="div">
-                      Qui suis-je?
+                      {data.title}
                     </Typography>
                     <Divider/>
                     <Typography sx={{p:2,}} variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
+                      {data.intro}
                     </Typography>
                   </CardContent>
               </CardActionArea>
@@ -57,11 +63,18 @@ const HomePageCard = ({className, ...rest}) => {
            >
                <Fade in={open}>
                <Box className={classnames('homepagecardmodal', className)}>
+               <CardMedia 
+                    sx={{ boxShadow: 3 }}
+                    component="img"
+                    height="140"
+                    src={data.src}
+                    alt={data.alt} 
+                  />
                    <Typography id="transition-modal-title" variant="h6" component="h2">
-                   Text in a modal
+                   {data.title}
                    </Typography>
                    <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                   Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                   {data.description}
                    </Typography>
                </Box>
                </Fade>
