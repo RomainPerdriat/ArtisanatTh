@@ -30,13 +30,9 @@ const Reparations = ({className, ...rest}) => {
                 <BeforeAfter/>
                 <BeforeAfter/>
                 <BeforeAfter/>
-                <BeforeAfter/>
-               
+                <BeforeAfter/> 
             </Box>
             </Box>
-            
-            
-          
         </Box>
    );
 };
