@@ -8,6 +8,7 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { MenuItem } from '@material-ui/core';
+import BeforeAfter from '../BeforeAfter/BeforeAfter'
 
 const Creations = ({className, ...rest}) => {
     const handleChange = async (event) => {
@@ -18,8 +19,9 @@ const Creations = ({className, ...rest}) => {
             className={classnames('creations', className)}
             {...rest}
          >
-           <Box className ="title-container">
-                <FormControl className="select-form" fullWidth>
+          
+            <Box className = "creations-container">
+            <FormControl className="select-form" fullWidth>
                     <InputLabel id="demo-simple-select-label">Catégories Principales</InputLabel>
                     <Select
                         className="select-field"
@@ -35,10 +37,11 @@ const Creations = ({className, ...rest}) => {
                             {/* Here i'll need .map to filter all articles */}
                     </Select>
                 </FormControl>
-            </Box>
-            <Box className = "creations-container">
-            
                 <Box className ="creations-list">
+                <BeforeAfter/>
+                <BeforeAfter/>
+                <BeforeAfter/>
+                <BeforeAfter/>
                 
             </Box>
             </Box>

@@ -13,18 +13,14 @@
         margin: auto;
     }
 }
-.title-container {
-        padding-bottom: .5rem;
-        padding-top:.5rem;
-        background-color: yellow;
-        color: $color;
-        max-width:71.5em;
-        margin: auto;
-    }
     .creations-list{
         background-color: $color2;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         margin-top:2rem;       
+    }
+    .select-form{
+        max-width:60%;
+        background-color: $color;
     }
