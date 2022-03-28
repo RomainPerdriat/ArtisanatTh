@@ -7,7 +7,7 @@ import Home from '../Home/Home';
 import HomePage from '../HomePageCase/HomePage/HomePage';
 import {Routes, Route} from 'react-router-dom';
 import Creations from '../Creations/Creations';
-import Reparations from '../Reparations/Reparations';
+import Restaurations from '../Restaurations/Restaurations';
 import Contact from '../Contact/Contact';
 import Error404 from '../Error404/Error404'
 
@@ -29,9 +29,9 @@ const App = ({className, ...rest}) => {
                     <Creations/>
                 </Home>}
         />
-        <Route path ="/reparations" element={
+        <Route path ="/restaurations" element={
                 <Home>
-                    <Reparations/>
+                    <Restaurations/>
                 </Home>}
         />
         <Route path ="/contact" element={

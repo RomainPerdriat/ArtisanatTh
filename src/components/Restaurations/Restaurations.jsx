@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './reparations.scss';
+import './restaurations.scss';
 import { Box } from '@material-ui/core';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import { Typography } from '@material-ui/core';
-const Reparations = ({className, ...rest}) => {
+const Restaurations = ({className, ...rest}) => {
    return (
 
 
     
        <Box
-            className={classnames('reparations', className)}
+            className={classnames('restaurations', className)}
             {...rest}
          >  
             
-            <Box className = "reparations-container">
+            <Box className = "restaurations-container">
             <Box className ="title-container">
-                    <Typography className ="reparations-title">
+                    <Typography className ="restaurations-title">
                     Il y a toujours une solution pour redonner vie à vos objets!
                     </Typography>
             </Box>
@@ -37,10 +37,10 @@ const Reparations = ({className, ...rest}) => {
    );
 };
 
-Reparations.propTypes = {
+Restaurations.propTypes = {
     className: PropTypes.string,
 };
-Reparations.defaultProps = {
+Restaurations.defaultProps = {
     className: '',
 };
-export default React.memo(Reparations);
+export default React.memo(Restaurations);

@@ -38,8 +38,19 @@
     .btn{
         background-color:$color;
         margin: 0em 2em;
-        padding: 1em 2em;
+        padding: 1em 1em;
         border-radius: 15%;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-
     }
+    .btn:hover{
+        background-color: $color; /* Green */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 100px 200px -40px;
+        color: white;
+      }
+    .btn:disabled{
+        border: 1px solid $bg-color;
+        background-color: $color2;
+        color: $bg-color2;
+        padding: 1em 1em;
+    }
+    

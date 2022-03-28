@@ -15,7 +15,7 @@ const Header = ({className, ...rest}) => {
             {...rest}
          > 
         <Typography className = "header-title">ARTISANT</Typography>
-        <img className = "header-logo" src={logo} alt="Logo" />;
+            <img className = "header-logo" src={logo} alt="Logo" />;
         <Typography className = "header-title"> MAROQUINIER D&apos;ART</Typography>
          <NavBar/> 
         </Box>

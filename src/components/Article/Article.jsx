@@ -12,7 +12,11 @@ import Fade from '@mui/material/Fade';
 import CardMedia from '@mui/material/CardMedia';
 import { Button } from '@material-ui/core';
 
-const Article = ({className, ...rest}) => {
+const Article = ({
+  className,
+  pict,
+   ...rest
+  }) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -28,11 +32,11 @@ const Article = ({className, ...rest}) => {
                       <Box 
                       component="img"
                       sx={{
-                        height: 250,
-                        width: 370,
+                        height: 270,
+                        width: 340,
                       }}
                       alt="article"
-                      src={cuirs}>
+                      src={pict}>
                       </Box>
                       <Typography sx={{p:2,}} gutterBottom variant="h6" component="div">
                       <Typography sx={{p:2,}} variant="body2" color="text.secondary">
@@ -63,8 +67,8 @@ const Article = ({className, ...rest}) => {
                <CardMedia 
                     sx={{ boxShadow: 3 }}
                     component="img"
-                    height="140"
-                    src={cuirs}
+                    height="150"
+                    src={pict}
                     alt='img de l&apos;article cliqué'
                   />
                    <Typography id="transition-modal-title" variant="h6" component="h2">
@@ -83,6 +87,7 @@ const Article = ({className, ...rest}) => {
 
 Article.propTypes = {
     className: PropTypes.string,
+    pict: PropTypes.string,
 };
 Article.defaultProps = {
     className: '',

@@ -11,6 +11,9 @@ import { MenuItem } from '@material-ui/core';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import { useState } from 'react';
 import Article from '../Article/Article';
+import bag from '../../assets/bag.jpg';
+import belt from '../../assets/belt.jpg';
+import hiver from '../../assets/hiver.png'
 
 const Creations = ({className, ...rest}) => {
     // const handleChange = async (event) => {
@@ -55,12 +58,13 @@ const Creations = ({className, ...rest}) => {
          
           
             <Box className = "creations-container">
+            
             <Box className = "creations-btns">
-                <button onClick = {handleAllBtnClick} className="btn">Tout</button>
-                <button onClick = {handleBagBtnClick} className="btn">Sacs</button>
-                <button onClick = {handleBeltBtnClick} className="btn">Ceintures</button>
-                <button onClick = {handleVariousBtnClick} className="btn">Divers</button>
-         </Box>   
+                {allBtn ? <button onClick = {handleAllBtnClick} disabled className="btn">Tout</button> : <button onClick = {handleAllBtnClick} className="btn">Tout</button>}  
+                {bagBtn ? <button onClick = {handleBagBtnClick} disabled className="btn">Sacs</button> : <button onClick = {handleBagBtnClick} className="btn">Sacs</button> } 
+                {beltBtn ? <button onClick = {handleBeltBtnClick} disabled className="btn">Ceintures</button> : <button onClick = {handleBeltBtnClick} className="btn">Ceintures</button>}
+                {variousBtn ? <button onClick = {handleVariousBtnClick} disabled className="btn">Divers</button> : <button onClick = {handleVariousBtnClick} className="btn">Divers</button>}
+            </Box>   
             {/* <FormControl className="select-form" fullWidth>
                     <InputLabel id="demo-simple-select-label">Catégories Principales</InputLabel>
                     <Select
@@ -78,48 +82,42 @@ const Creations = ({className, ...rest}) => {
                 </FormControl> */}
                 {allBtn  &&
                 <>
-                    <Typography>TOUT</Typography>
+                    <Typography>Tout</Typography>
                     <Box className ="creations-list">
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {belt}/>
+                        <Article pict = {belt} />
+                        <Article pict = {hiver}/>
                     </Box>
                 </>}
                 {bagBtn &&
                 <>
                     <Typography>Sacs</Typography>
                     <Box className ="creations-list">
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
+                        <Article pict = {bag}/>
                     </Box>
                 </>}
                 {beltBtn &&
                 <>
                     <Typography>Ceintures</Typography>
                     <Box className ="creations-list">
-                        <Article/>
-                        <Article/>
-                        <Article/>
+                        <Article pict = {belt}/>
+                        <Article pict = {belt}/>
                     </Box>
                 </>}
                 {variousBtn &&
                 <>
                     <Typography>Divers</Typography>
-                    <Box className ="creations-list">
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
-                        <Article/>
+                    <Box className ="creations-list">           
+                        <Article pict = {hiver}/>
                     </Box>
                 </>}
             </Box>
@@ -130,6 +128,7 @@ const Creations = ({className, ...rest}) => {
 
 Creations.propTypes = {
     className: PropTypes.string,
+    pict: PropTypes.string,
 };
 Creations.defaultProps = {
     className: '',

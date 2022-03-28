@@ -22,7 +22,7 @@ const NavBar = ({className, ...rest}) => {
             <Toolbar className = "toolbar">
                 <NavLink className = "navlink" to ="/">Accueil</NavLink>
                 <NavLink className = "navlink" to = "/creations">Créations</NavLink>
-                <NavLink className = "navlink" to ="/reparations">Réparations</NavLink>
+                <NavLink className = "navlink" to ="/restaurations">Restaurations</NavLink>
                 <NavLink className = "navlink" to ="/contact">Contact</NavLink>
                 <SearchInput />
             </Toolbar>
