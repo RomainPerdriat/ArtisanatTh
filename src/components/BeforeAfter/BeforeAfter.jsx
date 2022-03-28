@@ -14,35 +14,35 @@ const BeforeAfter = ({className, ...rest}) => {
             {...rest}
          >
               <Box className="flip-card-container">
-    <Box className="flip-card">
-      <Box className="flip-card-front">
-        <Box 
-        component="img"
-        sx={{
-          height: 233,
-          width: 350,
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: 350, md: 250 },
-        }}
-        alt="restauration1"
-        src={exemple}>
-        </Box>
-      </Box>
-      <Box>
-       <Box  class="flip-card-back"
-        component="img"
-        sx={{
-          height: 233,
-          width: 350,
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: 350, md: 250 },
-        }}
-        alt="restauration1"
-        src={cuirs}>
-        </Box>
-      </Box>
-    </Box>
-  </Box>
+                  <Box className="flip-card">
+                    <Box className="flip-card-front">
+                      <Box 
+                      component="img"
+                      sx={{
+                        height: 233,
+                        width: 350,
+                        maxHeight: { xs: 233, md: 167 },
+                        maxWidth: { xs: 350, md: 250 },
+                      }}
+                      alt="restauration1"
+                      src={exemple}>
+                      </Box>
+                    </Box>
+                    <Box>
+                    <Box  class="flip-card-back"
+                      component="img"
+                      sx={{
+                        height: 233,
+                        width: 350,
+                        maxHeight: { xs: 233, md: 167 },
+                        maxWidth: { xs: 350, md: 250 },
+                      }}
+                      alt="restauration1"
+                      src={cuirs}>
+                      </Box>
+                    </Box>
+                  </Box>
+              </Box>
         </Box>
    );
 };

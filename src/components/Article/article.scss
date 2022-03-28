@@ -1,0 +1,12 @@
+@import 'styles/vars';
+
+
+.article{
+   margin: 1em;
+   &-unity{
+       background-color: $color;
+       border:solid $bg-color2;
+       padding:.5em;
+   }
+  
+}

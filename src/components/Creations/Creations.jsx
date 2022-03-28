@@ -10,6 +10,7 @@ import Select from '@mui/material/Select';
 import { MenuItem } from '@material-ui/core';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import { useState } from 'react';
+import Article from '../Article/Article';
 
 const Creations = ({className, ...rest}) => {
     // const handleChange = async (event) => {
@@ -79,40 +80,46 @@ const Creations = ({className, ...rest}) => {
                 <>
                     <Typography>TOUT</Typography>
                     <Box className ="creations-list">
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
                     </Box>
                 </>}
                 {bagBtn &&
                 <>
                     <Typography>Sacs</Typography>
                     <Box className ="creations-list">
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
                     </Box>
                 </>}
                 {beltBtn &&
                 <>
                     <Typography>Ceintures</Typography>
                     <Box className ="creations-list">
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
                     </Box>
                 </>}
                 {variousBtn &&
                 <>
                     <Typography>Divers</Typography>
                     <Box className ="creations-list">
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
-                    <BeforeAfter/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
+                        <Article/>
                     </Box>
                 </>}
             </Box>
